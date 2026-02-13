@@ -1,7 +1,7 @@
 {
   "name": "thai-wordcut-ts",
   "description": "TypeScript-first fork of wordcut: Thai word segmentation library for Node.js projects.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/kitaclang/thai-wordcut-ts",
   "author": {
     "name": "KC",
@@ -45,6 +45,7 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "npm run build && vitest run"
   },
