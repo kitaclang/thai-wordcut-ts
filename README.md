@@ -23,7 +23,7 @@ Usage (Library)
 TypeScript:
 
 ```ts
-import createWordcut, { cut } from "thai-wordcut-ts";
+import { createWordcut, cut } from "thai-wordcut-ts";
 
 const wordcut = createWordcut();
 const segmented = wordcut.cut("ฉันชอบกินข้าว");
@@ -33,7 +33,7 @@ const quick = cut("กากา");
 TypeScript with custom dictionary:
 
 ```ts
-import createWordcut from "thai-wordcut-ts";
+import { createWordcut } from "thai-wordcut-ts";
 
 const wordcut = createWordcut({
   dictPath: ["./customdict/*.txt"],
