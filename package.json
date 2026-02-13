@@ -1,0 +1,62 @@
+{
+  "name": "wordcut-ts",
+  "description": "TypeScript-first fork of wordcut: Thai word segmentation library for Node.js projects.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/kitaclang/wordcut-ts",
+  "author": {
+    "name": "KC",
+    "email": "kitaclang@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kitaclang/wordcut-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kitaclang/wordcut-ts/issues/"
+  },
+  "licenses": [
+    {
+      "type": "LGPL",
+      "url": "http://www.gnu.org/licenses/lgpl.html"
+    }
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "data/tdict-*.txt",
+    "lib/*.js",
+    "lib/*.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": "^20.0.0 || ^22.0.0 || >=24.0.0"
+  },
+  "contributors": [
+    {
+      "name": "Vee Satayamas",
+      "email": "vsatayamas@gmail.com"
+    }
+  ],
+  "keywords": [
+    "word",
+    "thai",
+    "segmentation",
+    "break",
+    "boundary"
+  ],
+  "dependencies": {
+    "glob": "^13.0.3",
+    "underscore": "^1.13.7"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3",
+    "vitest": "^4.0.18"
+  }
+}
